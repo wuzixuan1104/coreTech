@@ -38,6 +38,6 @@
     </div>
     <div class="btnArea">
         <button type="submit" class="searchBtn">查詢</button>
-        <button onclick="javascript:location.href='/'" class="rankingBtn">排行榜</button>
+        <button type="button" onclick="window.location.href='http://dev.coretech.com.tw'" class="rankingBtn">排行榜</button>
     </div>
 </form>
