@@ -8,7 +8,7 @@ class AreaMain extends Model {
   // static $hasOne = [];
 
   static $hasMany = [
-    'subs' => ['model' => 'AreaSub', 'order' => 'order ASC']
+    'subs' => ['model' => 'AreaSub', 'order' => '`order` ASC']
   ];
 
   // static $belongToOne = [];

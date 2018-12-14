@@ -28,7 +28,7 @@ abstract class SiteController extends Controller {
          ->addJS('/asset/js/res/ckeditor_d2015_05_18/plugins/tabletools/tableresize.js')
          ->addJS('/asset/js/res/ckeditor_d2015_05_18/plugins/dropler/dropler.js')
          ->addJS('/asset/js/site/layout.js');
-
+    
     $this->view = View::maybe('site/' . Router::className() . '/' . Router::methodName() . '.php')
                           ->appendTo(View::create('site/layout.php'), 'content')
                           ->withReference('asset', $this->asset);

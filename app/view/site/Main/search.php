@@ -1,16 +1,18 @@
 
 <div class="mainWrap">
     <h2>台北市/信義區/日式料理/居酒屋 查詢結果</h2>
-    <div class="m-pager">
-        <ul>
-            <li><span>1</span></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">4</a></li>
-            <li><a href="">5</a></li>
-            <li><a href="">＞</a></li>
-        </ul>
+    <div class="pagination">
+        <div>
+            <a href="" class="l"></a>
+            <a href="" class="a">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="" class="r"></a>
+        </div> 
     </div>
+    
     <div class="m-shopList">
         <ul>
             <li class="shopData">
@@ -138,15 +140,16 @@
             </li>
         </ul>
     </div>
-    <div class="m-pager">
-        <ul>
-            <li><span>1</span></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">4</a></li>
-            <li><a href="">5</a></li>
-            <li><a href="">＞</a></li>
-        </ul>
+    <div class="pagination">
+        <div>
+            <a href="" class="l"></a>
+            <a href="" class="a">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="" class="r"></a>
+        </div> 
     </div>
 </div>
 <div class="rightWrap">

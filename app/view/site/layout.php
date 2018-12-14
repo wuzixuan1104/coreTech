@@ -17,13 +17,14 @@
                 <a href=""><img src="<?php echo Url::base('asset/img/logo.png'); ?>" alt="LOGO"></a>
             </div>
         </header>
+
         <div class="f-breadCrumbs u-container">
             <ul>
-                <li><a href="">首頁</a></li>
-                <li>></li>
-                <li><a href="">台北市 排行榜</a></li>
-                <li>></li>
-                <li><span>美食排行榜</span></li>
+                <?php 
+                    echo implode('', array_map(function($value) {
+                        return isset($value['href']) ? '<li><a href="' . $value['href'] . '">' . $value['name'] . '</a></li><li>></li>' : '<li><span>' . $value['name'] . '</span></li>'; 
+                    }, $navs));
+                ?>
             </ul>
         </div>
         <div class="f-mainContents u-container">

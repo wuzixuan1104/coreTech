@@ -8,7 +8,7 @@ class FoodMain extends Model {
   // static $hasOne = [];
 
   static $hasMany = [
-    'subs' => ['model' => 'FoodSub', 'order' => 'order ASC']
+    'subs' => ['model' => 'FoodSub', 'order' => '`order` ASC']
   ];
 
   // static $belongToOne = [];
