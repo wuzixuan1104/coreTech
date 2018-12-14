@@ -14,7 +14,7 @@
         <header>
             <h1><span><?php echo isset($hr) ? $hr : ''; ?></span></h1>
             <div class="headerLogo">
-                <a href=""><img src="<?php echo Url::base('asset/img/logo.png'); ?>" alt="LOGO"></a>
+                <a href="/"><img src="<?php echo Url::base('asset/img/logo.png'); ?>" alt="LOGO"></a>
             </div>
         </header>
 

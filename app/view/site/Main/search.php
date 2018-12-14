@@ -2,15 +2,7 @@
 <div class="mainWrap">
     <h2>台北市/信義區/日式料理/居酒屋 查詢結果</h2>
     <div class="pagination">
-        <div>
-            <a href="" class="l"></a>
-            <a href="" class="a">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a href="">4</a>
-            <a href="">5</a>
-            <a href="" class="r"></a>
-        </div> 
+        <div><?php echo implode('', $pagesStr); ?></div>
     </div>
     
     <div class="m-shopList">
@@ -141,70 +133,10 @@
         </ul>
     </div>
     <div class="pagination">
-        <div>
-            <a href="" class="l"></a>
-            <a href="" class="a">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a href="">4</a>
-            <a href="">5</a>
-            <a href="" class="r"></a>
-        </div> 
+        <div><?php echo implode('', $pagesStr); ?></div>
     </div>
 </div>
 <div class="rightWrap">
-    <div class="r-searchMenu">
-        <p class="searchTitle"><span>查詢</span></p>
-        <div class="searchArea">
-            <p class="typeTitle">地點</p>
-            <ul class="main">
-                <li class="m-list is-active">
-                    <p class="mainList"><span>台北市</span></p>
-                    <ul class="sub">
-                        <li>
-                            <input type="checkbox" id="s-area0">
-                            <label for="s-area0">全台北市</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="s-area1" checked>
-                            <label for="s-area1">信義區</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="s-area2">
-                            <label for="s-area2">士林區</label>
-                        </li>
-                    </ul>
-                </li>
-                <li class="m-list">
-                    <p class="mainList"><span>新北市</span></p>
-                </li>
-            </ul>
-        </div>
-        <div class="searchFood">
-            <p class="typeTitle">分類</p>
-            <ul class="main">
-                <li class="m-list">
-                    <p class="mainList"><span>中式料理</span></p>
-                </li>
-                <li class="m-list is-active">
-                    <p class="mainList"><span>日式料理</span></p>
-                    <ul class="sub">
-                        <li>
-                            <input type="checkbox" id="s-genre0">
-                            <label for="s-genre0">全日式料理</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="s-genre1" checked>
-                            <label for="s-genre1">居酒屋</label>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="btnArea">
-            <button class="searchBtn">查詢</button>
-            <button class="rankingBtn">排行榜</button>
-        </div>
-    </div>
+    <?php echo isset($rightMenu) ? $rightMenu : ''; ?>
 </div>
        
