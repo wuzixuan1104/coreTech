@@ -18,6 +18,7 @@ abstract class SiteController extends Controller {
          ->addJS('/asset/js/res/jquery_ui_v1.12.1.js')
          ->addJS('/asset/js/res/jquery_ujs.js')
          ->addJS('/asset/js/res/imgLiquid-min.js')
+         ->addJS('/asset/js/res/jquery-cookie-master/src/jquery.cookie.js')
          ->addJS('/asset/js/res/timeago.js')
          ->addJS('/asset/js/res/datetimepicker/jquery.datetimepicker.full.js')
          ->addJS('/asset/js/res/oaips-20180115.js')

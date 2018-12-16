@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         
         <title><?php echo isset($title) ? $title : ''; ?></title>
-
+        
         <?php echo $asset->renderCSS();?>
         <?php echo $asset->renderJS();?>
     </head>
@@ -14,7 +14,9 @@
         <header>
             <h1><span><?php echo isset($hr) ? $hr : ''; ?></span></h1>
             <div class="headerLogo">
-                <a href="<?php Url::base('shops'); ?>"><img src="<?php echo Url::base('asset/img/logo.png'); ?>" alt="LOGO"></a>
+                <a href="<?php echo Url::base('shops'); ?>">
+                    <img src="<?php echo Url::base('asset/img/logo.png'); ?>" alt="LOGO">
+                </a>
             </div>
         </header>
 

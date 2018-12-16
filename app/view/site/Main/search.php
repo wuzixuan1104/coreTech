@@ -50,7 +50,7 @@
                             </tr>
                         </table>
                         <div class="linkBtn">
-                            <button class="like u-hoverOpacity">LIKE</button>
+                            <button class="like u-hoverOpacity" data-id="<?php echo $obj->id; ?>">LIKE</button>
                         </div>
                     </div>
                 </div>

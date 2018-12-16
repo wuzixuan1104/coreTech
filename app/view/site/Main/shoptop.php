@@ -2,7 +2,7 @@
     <?php echo $obj->name; ?>
 </h2>
 <div class="linkBtn">
-    <button class="like is-active u-hoverOpacity">LIKE</button>
+    <button class="like u-hoverOpacity" data-id="<?php echo $obj->id; ?>">LIKE</button>
     <a href="<?php echo Url::base('shop/' . $obj->id . '/comment'); ?>" class="comment">分享文</a>
 </div>
 <p class="shopTitle">

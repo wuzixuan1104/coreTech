@@ -8,4 +8,3 @@ Router::get('shops/search')->controller('Shop@search');
 Router::get('shop/(id:num)/show')->controller('Shop@show');
 Router::get('shop/(id:num)/comment')->controller('ShopComment@index');
 Router::post('shop/(id:num)/comment')->controller('ShopComment@create');
-// Router::post('shop/(id:num)/comment/(commentId:num)/reply')->controller('api/ShopCommentReply@create');
