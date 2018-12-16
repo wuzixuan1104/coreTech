@@ -3,7 +3,7 @@
 </h2>
 <div class="linkBtn">
     <button class="like is-active u-hoverOpacity">LIKE</button>
-    <a href="" class="comment">分享文</a>
+    <a href="<?php echo Url::base('shop/' . $obj->id . '/comment'); ?>" class="comment">分享文</a>
 </div>
 <p class="shopTitle">
     <?php echo $obj->title; ?>
@@ -17,7 +17,7 @@
     <h3><span class="photo">PHOTO GALLERY</span></h3>
     <div class="photoSlider">
         <ul>
-            <li><img src="<?php echo Url::base('asset/img/shop/' . $obj->photo->photoNum. '.png'); ?>"  alt=""></li>
+            <li><img src="<?php echo Url::base('asset/img/shop/' . ($obj->photo ? $obj->photo->photoNum : '13') . '.png'); ?>"  alt=""></li>
         </ul>
         <div class="pagination">
             <span class="active"></span>

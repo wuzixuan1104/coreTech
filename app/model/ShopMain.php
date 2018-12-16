@@ -12,7 +12,8 @@ class ShopMain extends Model {
   static $hasMany = [
     'photos' => ['model' => 'ShopPhoto', 'order' => 'order ASC'],
     'shopFoods' => 'ShopFood',
-    'foodSubs' => ['model' => 'FoodSub', 'by' => 'shopFood', 'order ASC']
+    'foodSubs' => ['model' => 'FoodSub', 'by' => 'shopFood', 'order' => 'order ASC'],
+    'comments' => ['model' => 'ShopComment', 'order' => 'createAt DESC']
   ];
 
   static $belongToOne = [

@@ -5,11 +5,11 @@
     </div>
     <div class="m-shopList">
         <ul>
-            <?php foreach($objs as $obj): ?>
+            <?php foreach($objs as $key => $obj): ?>
             <li class="shopData">
                 <div class="shopHead">
-                    <a href="<?php echo Url::base('show/' . $obj->id); ?>">
-                        <span class="rankNum"><?php echo $obj->id; ?></span>
+                    <a href="<?php echo Url::base('shop/' . $obj->id . '/show'); ?>">
+                        <span class="rankNum"><?php echo $key + 1; ?></span>
                         <?php echo $obj->name; ?>
                     </a>
                 </div>

@@ -1,4 +1,4 @@
-<form class="r-searchMenu" action="<?php echo Url::base('search'); ?>">
+<form class="r-searchMenu" action="<?php echo Url::base('shops/search'); ?>">
     <p class="searchTitle"><span>查詢</span></p>
     <div class="searchArea">
         <p class="typeTitle">地點</p>
@@ -42,6 +42,6 @@
     </div>
     <div class="btnArea">
         <button type="submit" class="searchBtn">查詢</button>
-        <button type="button" onclick="window.location.href='http://dev.coretech.com.tw'" class="rankingBtn">排行榜</button>
+        <button type="button" onclick="window.location.href='<?php echo Url::base('shops'); ?>'" class="rankingBtn">排行榜</button>
     </div>
 </form>
