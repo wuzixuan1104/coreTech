@@ -9,7 +9,7 @@
             <li class="shopData">
                 <div class="shopHead">
                     <a href="<?php echo Url::base('shop/' . $obj->id . '/show'); ?>">
-                        <span class="rankNum"><?php echo $key + 1; ?></span>
+                        <span class="rankNum"><?php echo (isset($_GET['limit'], $_GET['offset']) ? ($_GET['limit'] * ($_GET['offset'] - 1)) : 0 ) + $key + 1; ?></span>
                         <?php echo $obj->name; ?>
                     </a>
                 </div>

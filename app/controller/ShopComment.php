@@ -20,7 +20,7 @@ class ShopComment extends SitePageController {
 
     $where = Where::create(['shopMainId = ?', $this->obj->id]);
     $total = \M\ShopComment::count($where);
-    $pagesStr = Pagination::info($total, 2, 2);
+    $pagesStr = Pagination::info($total, 10, 2);
 
     $commentObjs  = \M\ShopComment::all([
      'order' => 'createAt DESC',
